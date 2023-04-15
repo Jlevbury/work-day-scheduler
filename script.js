@@ -29,6 +29,7 @@ $('.btn').click(function(){
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+
     // Apply past, present, or future class to each time-block based on the current hour
     $('.time-block').each(function() {
       var hour = parseInt($(this).attr('id').split('-')[1]); // get the hour from the id of the time-block
@@ -61,6 +62,7 @@ $('.btn').click(function(){
       localStorage.setItem(hour, description); // save the description in local storage with the hour as the key
     });
 
+    
   //
   // TODO: Add code to display the current date in the header of the page.
 
