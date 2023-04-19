@@ -4,17 +4,27 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-color:#343a40;;
 }
-
+/*added h1 & p selectors to change text color to white to fix contrast rating for accessibility*/
+h1{
+  color:#dee2e6;
+}
+p{
+  color:#ffffff;
+}
 textarea {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border: solid black;
+  border-radius: 10px;
   padding: 10px;
 }
-
+#currentDay{
+  color: #ffffff;
+}
 .description {
   white-space: pre-wrap;
 }
@@ -30,7 +40,9 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  color: #000000;
+  border: solid black;
+  border-radius: 10px;
 }
 
 .past {
@@ -49,14 +61,15 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  color: #000000;
+  border: solid black;
+  border-radius: 10px;
+  background-color: lightblue;
   color: white;
 }
-
+/* added highlight feature to hover before save*/
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  color:yellow;
 }
