@@ -30,18 +30,8 @@
       <p class="lead">A schedule for planning how to look busy!</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container-lg px-5 vstack gap-3">
-      <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
-
-      <!-- Example of a past time block. The "past" class adds a gray background color. -->
+    <div class="container-lg px-5 vstack gap-3"><!-- vstack uses to build in uniform spacing between rows-->
+     
       <div id="hour-9" class="row time-block past">
         <div class="col-2 col-md-1 hour text-center py-3 ">0900hrs</div>
         <textarea id="toDo" class="col-8 col-md-10 description" rows="3">       
@@ -52,7 +42,7 @@
         </button>
       </div>
 
-      <!-- Example of a a present time block. The "present" class adds a red background color. -->
+      
       <div id="hour-10" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">1000hrs</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -61,7 +51,7 @@
         </button>
       </div>
 
-      <!-- Example of a future time block. The "future" class adds a green background color. -->
+      
       <div id="hour-11" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">1100hrs</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
@@ -111,6 +101,7 @@
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
+      <!-- hour-OT created for tasks that may need to be completed afterhours-->
       <div id="hour-OT" class="row time-block future">
         <div class="col-2 col-md-1 hour text-center py-3">Overtime</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
